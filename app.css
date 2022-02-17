@@ -1,0 +1,70 @@
+*{
+  margin: 0; padding: 0; box-sizing: border-box;
+}
+body{
+  width: 100%;
+  height: 100vh;
+  font-size: 1.1rem;
+  font-weight: 300;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
+  overflow-y: scroll;
+  background: rgba(0, 0, 0, 0.2);
+}
+#navbar{
+  display: grid;
+  grid-template-columns: 100fr 100fr 100fr 100fr 100fr;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  height: 4rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  position: fixed; top: 0; left: 0;
+  z-index: 10;
+  background: #286090;
+
+}
+
+nav a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+}
+main{
+  margin-top: 5rem;
+  padding: 0 1rem;
+}
+footer{
+  position: fixed; bottom: 0; left: 0;
+  width: 100%;
+  height: 0.2rem;
+  background: #286090;
+}
+.item{
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #999;
+  background: white;
+}
+
+.login-form {
+  width: 340px;
+    margin: 50px auto;
+}
+  .login-form form {
+    margin-bottom: 15px;
+      background: #f7f7f7;
+      box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+      padding: 30px;
+  }
+  .login-form h2 {
+      margin: 0 0 15px;
+  }
+  .form-control, .btn {
+      min-height: 38px;
+      border-radius: 2px;
+  }
+  .btn {
+      font-size: 15px;
+      font-weight: bold;
+  }

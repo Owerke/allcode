@@ -1,0 +1,25 @@
+% include("header", title="Items")
+
+<main>
+
+  % if users == []:
+    <div>
+      No users yet
+    </div>
+  % end
+
+
+  <div id="users">
+    % for user in users:
+      <div class="user">
+        <div>Name {{user["name"]}}</div>
+        <div>Email {{user["email"]}}</div>
+        <div>Password {{user["password"]}}</div>
+      </div>
+    % end
+  </div>
+
+</main>
+
+% include("footer")
+  

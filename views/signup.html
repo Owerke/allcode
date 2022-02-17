@@ -1,0 +1,27 @@
+% include("header", title="Signup")
+
+<main>
+  <div class="login-form">
+    <form action="/signup" method="post">
+      <h2 class="text-center">Sign up</h2>
+            <div class="form-group">
+              <input name="user_name" type="text" placeholder="name" class="form-control"> 
+            </div>
+            <div class="form-group">
+              <input name="user_lastname" type="text" placeholder="lastname" class="form-control">
+            </div>
+            <div class="form-group">
+              <input name="user_email" type="text" placeholder="email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input name="user_password" type="text" placeholder="password" class="form-control">
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary btn-block">Sign me up</button>
+            </div>
+        </form>
+    </div>
+  </div>  
+</main>
+
+% include("footer")

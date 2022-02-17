@@ -1,0 +1,38 @@
+% include("header", title="Home")
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <main>
+    <h1>ADMIN PAGE - MIINIVERSE</h1>
+    <form>
+      <h3>Welcome {{user["name"]}} to the MINIVERSE. The email you logged in is {{user["email"]}} </h3>
+
+
+
+    <div class="form-group">   
+      <input name="user_post" type="text" class="form-control" placeholder="Write yur post here">
+    </div>
+    <div class="form-group">
+      <button type="submit" class="btn btn-primary btn-block">Say it</button>
+    </div>
+
+
+
+    <div class="form-group">
+      <a href="/">
+      <button type="submit" class="btn btn-primary btn-block">Logout</button>
+      </a>
+    </div>
+  </form>
+  </main>
+</body>
+</html>
+
+% include("footer")
