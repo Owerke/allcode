@@ -1,6 +1,7 @@
 USERS = []
 
 sessions = {
+  
 #this key points to the dictionary where we keep the data of the user, but because this is a session this is {}???
 }
 
