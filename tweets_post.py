@@ -1,3 +1,4 @@
+from ast import Delete
 from bottle import post, request, redirect
 import g
 import uuid
@@ -16,7 +17,6 @@ import uuid
 def _():
     tweet_title = request.forms.get("tweet_title")
     tweet_text = request.forms.get("tweet_text")
-
     new_tweet = {
         "id":  str(uuid.uuid4()),
         "tweet_title": tweet_title,

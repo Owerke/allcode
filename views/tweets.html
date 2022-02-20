@@ -12,14 +12,26 @@
  
     % for tweet in tweets:
       <div class="tweet">
- 
-        <form action="/delete-tweet" method="POST">
+
+
+        <form action="/update_tweet" method="POST">
           <input name="tweet-id" type="hidden" value='{{ tweet["id"] }}'>
           <div>tweet: {{ tweet["tweet_title"] }}</div>
           <div>tweet: {{ tweet["tweet_text"] }}</div>
+          <button name="submit" type="submit" value="update">update tweet</button>
+          <!-- <button name="submit" type="submit" value="delete">🗑️</button> -->
+        </form>
+        <form action="/delete-tweet" method="POST">
+          <input name="delete-tweet-id" type="hidden" value='{{ tweet["id"] }}'>
+          <!-- <div>tweet: {{ tweet["tweet_title"] }}</div>
+          <div>tweet: {{ tweet["tweet_text"] }}</div> -->
           <button>🗑️</button>
         </form>
- 
+
+        <hr>
+
+
+
       </div>
     % end
  
