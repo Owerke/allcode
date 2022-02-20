@@ -1,0 +1,30 @@
+% include("header", title="Items")
+ 
+<main>
+ 
+  % if tweets == []:
+    <div>
+      Sorry, no tweets to show
+    </div>
+  % end
+ 
+  <div id="tweets">
+ 
+    % for tweet in tweets:
+      <div class="item">
+ 
+        <form action="/delete-tweet" method="POST">
+          <input name="tweet-id" type="hidden" value='{{ item["id"] }}'>
+          <div>tweet: {{ tweet["content"] }}</div>
+          <button>🗑️</button>
+        </form>
+ 
+      </div>
+    % end
+ 
+  </div>
+ 
+</main>
+ 
+% include("footer")
+

@@ -1,4 +1,4 @@
-from bottle import error, get, post, redirect, request, run, static_file, view
+from bottle import error, get, post, run, static_file, view
 
 
 ##############################
@@ -6,13 +6,15 @@ import home_get             # GET
 import signup_get           # GET   
 import login_get            # GET
 import users_get            # GET
-import items_get            # GET
+import items_get           # GET
 import admin_get            # GET
 import signup_ok_get        # GET
 import logout_get           # GET
 import signup_post          # POST
 import login_post           # POST
-import delete_item_post     # POST
+import delete_item_post    # POST
+import tweets_get
+import tweets_post
 
 ##############################
 @get("/app.css")

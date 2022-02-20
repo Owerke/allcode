@@ -6,8 +6,6 @@ import g
 @post("/signup")
 def _():
   # VALIDATE
-
-
   user_id = str(uuid.uuid4())
   user_email = request.forms.get("user_email")
   user_name = request.forms.get("user_name")

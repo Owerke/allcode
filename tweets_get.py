@@ -1,10 +1,7 @@
 from bottle import get, view
 import g
-
-
-
 ##############################
-@get("/users")
-@view("users")
+@get("/tweets")
+@view("tweets")
 def _():
-    return dict(users=g.USERS)
+    return dict(tweets=g.TWEETS)
