@@ -11,11 +11,12 @@
   <div id="tweets">
  
     % for tweet in tweets:
-      <div class="item">
+      <div class="tweet">
  
         <form action="/delete-tweet" method="POST">
-          <input name="tweet-id" type="hidden" value='{{ item["id"] }}'>
-          <div>tweet: {{ tweet["content"] }}</div>
+          <input name="tweet-id" type="hidden" value='{{ tweet["id"] }}'>
+          <div>tweet: {{ tweet["tweet_title"] }}</div>
+          <div>tweet: {{ tweet["tweet_text"] }}</div>
           <button>🗑️</button>
         </form>
  

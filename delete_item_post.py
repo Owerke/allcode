@@ -4,14 +4,14 @@ import g
 ##############################
 ##############################
 ##############################
-@post("/delete-item")
+@post("/delete-tweet")
 def _():
   # VALIDATE
-  item_id = request.forms.get("item_id")
+  tweet_id = request.forms.get("tweet-id")
   # Delete the item for if enumarate
-  for index, item in enumerate(g.ITEMS):
-    if item["id"] == item_id:
-      g.ITEMS.pop(index)
-      return redirect("/items")
+  for index, tweet in enumerate(g.TWEETS):
+    if tweet["id"] == tweet_id:
+      g.TWEETS.pop(index)
+      return redirect("/tweets")
 
-  return redirect("/items")
+  return redirect("/tweets")
