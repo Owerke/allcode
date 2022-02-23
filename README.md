@@ -12,7 +12,7 @@
 
 - [x] The user must be able to log in (cookie)
 
-- [x] A user who is logged can create, delete, update a tweet.
+- [] A user who is logged can create, delete, update a tweet.
 
 - [x] A tweet can contain for example a title, description, and issue at epoch
 
