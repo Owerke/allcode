@@ -5,18 +5,18 @@
 <div class="login-form">
     <form action="/login" method="post">
         <h2 class="text-center">Log in</h2>
-        <div class="form-group"> 
+        <div class="form-group">
           % if error == "user_email":
           <h1>
             Please enter a valid email
           </h1>
-        % end 
+        % end
             <input name="user_email" type="text" class="form-control" placeholder="email" value="{{user_email or '' }}" required="required" >
         </div>
         <div class="form-group">
           % if error == "user_password":
       <h1>Please enter a valid password</h1>
-    % end    
+    % end
             <input name="user_password" type="password" class="form-control" placeholder="password" required="required" >
         </div>
         <div class="form-group">
@@ -25,9 +25,6 @@
     </form>
 </div>
 </main>
-</body>  
+</body>
 
 % include("footer")
-
-
-

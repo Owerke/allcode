@@ -26,3 +26,4 @@ def _():
     g.TWEETS.append(new_tweet)
 
     return redirect("/tweets")
+# description would be better. need to add validation to the tweet. certain legnths etc

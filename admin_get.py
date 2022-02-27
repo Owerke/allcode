@@ -19,7 +19,3 @@ def _():
         return redirect("/index")
     user = g.sessions[user_session_id] #extract the user, from the session
     return dict(user=user)  # return the user to the view.
-
-
-
-

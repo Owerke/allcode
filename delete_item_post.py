@@ -2,18 +2,19 @@ from bottle import post, redirect, request
 import g
 
 ##############################
+
+
 @post("/delete-tweet")
 def _():
-   # VALIDATE
-   tweet_id = request.forms.get("tweet-id")
-   # Delete the item for if enumarate
-   for index, tweet in enumerate(g.TWEETS):
-       if tweet["id"] == tweet_id:
-           g.TWEETS.pop(index)
-           return redirect("/tweets")
+    # VALIDATE
+    tweet_id = request.forms.get("tweet-id")
+    # Delete the item for if enumarate
+    for index, tweet in enumerate(g.TWEETS):
+        if tweet["id"] == tweet_id:
+            g.TWEETS.pop(index)
+            return redirect("/tweets")
 
-   return redirect("/tweets")
-
+    return redirect("/tweets")
 
 
 @post("/update_tweet")
@@ -37,4 +38,4 @@ def update_tweet():
                 g.TWEETS[index]["tweet_text"] = tweet_text
                 return redirect("/tweets")
 
-                #uj html oldalat csinálni ahol uj post tweet legyen amivel be utok irni uj erteket neki. 
+                # uj html oldalat csinálni ahol uj post tweet legyen amivel be utok irni uj erteket neki.
